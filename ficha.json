@@ -1,0 +1,349 @@
+{
+  "ficha": 1,
+  "gerado": "2026-10-31T02:03:48.764Z",
+  "origem": "docs/FICHA-LP.md",
+  "padrao": "2.8.0",
+  "cliente": "Safe Mine Soluções",
+  "produto": "Torre de iluminação Atlas Copco",
+  "composicao": ["linhas", "identificar", "aplicacoes", "diferenciais"],
+  "site": {
+    "brand": "Safe Mine Soluções",
+    "brandShort": "Safe Mine",
+    "product": "Torre de iluminação Atlas Copco",
+    "context": "obras e mineração",
+    "url": "https://lp-atlas-copco-torre-de-iluminacao.vercel.app/",
+    "address": "Rua José de Paula Filho, 128 - Europa, Contagem - MG, 32043-050",
+    "privacyUrl": "",
+    "whatsapp": "5531995538843",
+    "shortcodes": {
+      "chat": "[atendimento_chat id=\"default\"]",
+      "form": "[atendimento_form id=\"default-form\"]"
+    }
+  },
+  "campanha": {
+    "negatives": [
+      "torre de iluminação residencial",
+      "luminária de jardim",
+      "poste decorativo",
+      "abajur",
+      "lâmpada led avulsa",
+      "torre de iluminação para festa infantil",
+      "gerador de energia",
+      "bomba submersível",
+      "compressor de ar"
+    ],
+    "forbidden": [
+      "locação",
+      "locações",
+      "aluguel",
+      "alugar",
+      "alugamos",
+      "locamos",
+      "serviço de manutenção",
+      "manutenção de torres",
+      "manutenção preventiva",
+      "manutenção corretiva",
+      "assistência técnica",
+      "fazemos a manutenção",
+      "somos fabricante",
+      "somos fabricantes",
+      "fabricamos",
+      "nossa fábrica",
+      "filial",
+      "canal oficial",
+      "site oficial",
+      "loja oficial",
+      "todo o Brasil",
+      "todo o país",
+      "todo o território nacional",
+      "cobertura nacional",
+      "atendimento nacional",
+      "líder",
+      "o melhor",
+      "a melhor",
+      "número 1",
+      "nº 1",
+      "maior distribuidor",
+      "maior distribuidora",
+      "representamos",
+      "representante"
+    ],
+    "mainKeyword": "torre de iluminação atlas copco",
+    "areaAtendida": "Minas Gerais",
+    "onde": "selo da cotação, texto da cotação, texto do hero e meta description",
+    "familias": [
+      {
+        "nome": "produto-categoria",
+        "termos": [
+          "torre de iluminação solar",
+          "torre de iluminação a diesel",
+          "torre de iluminação industrial"
+        ],
+        "responde": "linhas"
+      },
+      {
+        "nome": "marca",
+        "termos": ["torre de iluminação atlas copco", "torre de iluminação hilight"],
+        "responde": "linhas"
+      },
+      {
+        "nome": "aplicacao",
+        "termos": ["torre de iluminação para mineração", "torre de iluminação para obras"],
+        "responde": "aplicacoes"
+      },
+      {
+        "nome": "cotacao",
+        "termos": ["cotação torre de iluminação industrial", "fornecedor torre de iluminação"],
+        "responde": "identificar"
+      }
+    ]
+  },
+  "publico": ["Operações", "Engenharia", "Manutenção", "Suprimentos", "Diretoria"],
+  "marcas": {
+    "usarLogos": false,
+    "nomes": ["Atlas Copco"],
+    "autorizacao": "distribuidor autorizado por decisão do usuário; arquivo e autorização da logo pendentes, e o carrossel exige 4 logos"
+  },
+  "tokens": {
+    "padrao": false,
+    "cores": {
+      "primaria": "#102c73",
+      "marca": "#163b99",
+      "acao": "#4d7f22",
+      "verde-marca": "#7ba249"
+    }
+  },
+  "conteudo": {
+    "title": "Torre de iluminação Atlas Copco para obras e mineração | Safe Mine",
+    "description": "Torre de iluminação Atlas Copco: modelos HiLight solar, diesel e híbrido, com atendimento consultivo em Minas Gerais. Solicite sua cotação.",
+    "hero": {
+      "eyebrow": "Linha HiLight para operações exigentes",
+      "title": "Torre de iluminação Atlas Copco para obras e mineração",
+      "text": "Modelos HiLight solar, diesel e híbrido para canteiros, frentes de mineração e operações remotas. Distribuidora autorizada em Minas Gerais, a Safe Mine entende sua aplicação e indica a torre certa.",
+      "points": [
+        {
+          "icon": "badge-check",
+          "line1": "Distribuidor autorizado",
+          "line2": "Atlas Copco"
+        },
+        {
+          "icon": "layers",
+          "line1": "Torres solar,",
+          "line2": "diesel e híbrida"
+        },
+        {
+          "icon": "mountain",
+          "line1": "Para obras",
+          "line2": "e mineração"
+        }
+      ]
+    },
+    "quote": {
+      "eyebrow": "Cotação de torres",
+      "title": "Fale com quem entende de torres de iluminação.",
+      "text": "Solicite cotação de torres de iluminação adequadas à sua operação. Atendimento em Minas Gerais: preencha o formulário ou fale direto conosco pelo WhatsApp.",
+      "trust": [
+        {
+          "icon": "users",
+          "label": "Atendimento consultivo"
+        },
+        {
+          "icon": "pin",
+          "label": "Atendimento em Minas Gerais"
+        },
+        {
+          "icon": "badge-check",
+          "label": "Distribuidor autorizado Atlas Copco"
+        }
+      ],
+      "lgpd": "Seus dados serão usados apenas para responder à sua solicitação de cotação, conforme a LGPD."
+    }
+  },
+  "secoes": {
+    "linhas": {
+      "dataExport": "productLines",
+      "data": "linhas.ts",
+      "conteudo": {
+        "eyebrow": "Linha HiLight",
+        "title": "Torres HiLight para cada fonte de energia",
+        "text": "Torres HiLight para obras e operações industriais. Conheça as opções solar, diesel e híbrida da Atlas Copco e consulte a indicada para a sua aplicação.",
+        "items": [
+          {
+            "id": "hilight-ms4",
+            "tag": "Solar",
+            "title": "HiLight MS4",
+            "description": "Bateria de lítio e 3 painéis de 430 Wp, sem consumo de combustível.",
+            "features": ["3.846 m²", "Solar", "Bateria de lítio LiFePO₄"],
+            "photo": "Torre de iluminação solar HiLight MS4 Atlas Copco",
+            "dark": false
+          },
+          {
+            "id": "hilight-v7-plus",
+            "tag": "Diesel",
+            "title": "HiLight V7+",
+            "description": "Para áreas grandes e longa autonomia, com 4 LEDs SMD de 350 W.",
+            "features": ["Até 7.000 m²", "Diesel", "Autonomia de até 105 h"],
+            "photo": "Torre de iluminação a diesel HiLight V7+ Atlas Copco",
+            "dark": false
+          },
+          {
+            "id": "hilight-mi6-plus",
+            "tag": "Híbrida",
+            "title": "HiLight MI6+",
+            "description": "Combina bateria e motor a diesel, para maior flexibilidade e eficiência.",
+            "features": ["Até 6.000 m²", "Híbrida", "Bateria e motor a diesel"],
+            "photo": "Torre de iluminação híbrida HiLight MI6+ Atlas Copco",
+            "dark": true
+          }
+        ]
+      }
+    },
+    "identificar": {
+      "dataExport": "supportPanel",
+      "data": "identificar.ts",
+      "conteudo": {
+        "eyebrow": "Dados para cotação",
+        "title": "Não sabe o modelo exato?",
+        "microcopy": "Você pode pedir cotação sem saber o modelo.",
+        "text": "Informe o que souber da aplicação. A Safe Mine avalia cobertura, autonomia, fonte de energia e terreno e indica a torre adequada.",
+        "items": [
+          {
+            "icon": "target",
+            "label": "Aplicação",
+            "hint": "Obra, mina ou evento"
+          },
+          {
+            "icon": "ruler",
+            "label": "Área a iluminar",
+            "hint": "Tamanho aproximado em m²"
+          },
+          {
+            "icon": "pin",
+            "label": "Localização",
+            "hint": "Cidade e UF"
+          },
+          {
+            "icon": "bolt",
+            "label": "Fonte de energia",
+            "hint": "Solar, diesel ou híbrida"
+          },
+          {
+            "icon": "layers",
+            "label": "Modelo de interesse",
+            "hint": "MS4, V7+ ou MI6+"
+          },
+          {
+            "icon": "mountain",
+            "label": "Condições do terreno",
+            "hint": "Acesso e ambiente"
+          }
+        ]
+      }
+    },
+    "aplicacoes": {
+      "dataExport": "applications",
+      "data": "aplicacoes.ts",
+      "conteudo": {
+        "eyebrow": "Aplicações",
+        "title": "Iluminação temporária para cada operação",
+        "text": "Iluminação temporária para mineração, construção e operações remotas, com a fonte de energia adequada a cada aplicação.",
+        "items": [
+          {
+            "id": "canteiros-de-obra",
+            "label": "Canteiros de obra",
+            "description": "Iluminação de canteiros, frentes de obra e áreas operacionais.",
+            "photo": "Torre de iluminação solar HiLight em terreno aberto, com guindaste ao fundo"
+          },
+          {
+            "id": "mineracao-pedreiras",
+            "label": "Mineração e pedreiras",
+            "description": "Iluminação das áreas de trabalho em mineração e pedreiras.",
+            "photo": "Torre de iluminação HiLight a diesel em área de mineração"
+          },
+          {
+            "id": "operacoes-remotas",
+            "label": "Operações remotas",
+            "description": "Iluminação temporária para operações remotas e de alta exigência.",
+            "photo": "Equipe com colete refletivo junto a torres de iluminação na entrada de um túnel"
+          },
+          {
+            "id": "eventos-temporarias",
+            "label": "Eventos e operações temporárias",
+            "description": "Iluminação móvel para eventos, conforme o local e o projeto.",
+            "photo": "Torres de iluminação Atlas Copco acesas à noite, com prédios ao fundo"
+          }
+        ]
+      }
+    },
+    "diferenciais": {
+      "dataExport": "why",
+      "data": "diferenciais.ts",
+      "conteudo": {
+        "eyebrow": "Diferenciais Safe Mine",
+        "titleLines": ["Operação noturna", "exige visibilidade."],
+        "text": "A Safe Mine entende a aplicação antes de indicar a torre, avaliando cobertura, autonomia, fonte de energia e condições do terreno.",
+        "scene": "Vista aérea noturna de uma mineração iluminada por torres Atlas Copco",
+        "reasons": [
+          {
+            "icon": "badge-check",
+            "title": "Distribuidor autorizado",
+            "description": "Conectamos sua operação à linha HiLight Atlas Copco."
+          },
+          {
+            "icon": "user",
+            "title": "Atendimento consultivo",
+            "description": "Entendimento da necessidade antes da indicação."
+          },
+          {
+            "icon": "clock",
+            "title": "Resposta rápida",
+            "description": "Resposta rápida aos desafios e demandas da operação."
+          },
+          {
+            "icon": "layers",
+            "title": "Experiência de mercado",
+            "description": "Conhecimento técnico e relacionamentos sólidos no setor."
+          },
+          {
+            "icon": "sun",
+            "title": "Solar, diesel ou híbrida",
+            "description": "Escolha conforme a necessidade da aplicação."
+          }
+        ]
+      }
+    }
+  },
+  "assets": {
+    "pendentes": []
+  },
+  "fora": {
+    "especificacoes": {
+      "veredicto": "insuficiente",
+      "falta": "só 3 modelos, que se distinguem por fonte de energia; MI6+ sem dados"
+    },
+    "vitrine": {
+      "veredicto": "nao-se-aplica",
+      "falta": "a oferta tem 3 itens"
+    },
+    "processo": {
+      "veredicto": "insuficiente",
+      "falta": "4 a 6 etapas reais e prazos, a pedir ao comercial"
+    },
+    "segmentos": {
+      "veredicto": "insuficiente",
+      "falta": "6 de 7 setores, sem descrição, equipamentos ou foto por setor"
+    },
+    "clientes": {
+      "veredicto": "insuficiente",
+      "falta": "nenhum logo de cliente autorizado; 1 número próprio (fundação em 2017) de 3"
+    },
+    "perguntas": {
+      "veredicto": "quase",
+      "falta": "perguntas do comercial sobre prazo, garantia e autonomia; a estrutura desta LP não inclui a seção"
+    },
+    "escopo": {
+      "veredicto": "nao-se-aplica",
+      "falta": "a oferta é uma linha de equipamentos, não a consolidação de compras de itens diferentes"
+    }
+  }
+}
