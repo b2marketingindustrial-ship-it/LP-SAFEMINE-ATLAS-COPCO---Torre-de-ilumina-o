@@ -16,14 +16,11 @@ import heroBg from '@assets/heroBg.png'
 
 /* ------------------------------------------------------------------ tipos */
 
-/** Linha da faixa "Encontre a linha" no pé do hero. Cada card é um CTA. */
-export interface HeroLine {
-  id: string
+/** Ponto da caixa de ícones do hero: `line1` e `line2` ficam sempre em duas linhas. */
+export interface HeroPoint {
   icon: IconName
-  title: string
-  /** Dado de destaque sob o título; mais de um item entra separado por divisória. */
-  spec: readonly string[]
-  description: string
+  line1: string
+  line2: string
 }
 
 export interface TrustItem {
@@ -40,8 +37,6 @@ export const cta = {
   secondary: 'Identifique sua torre',
   card: 'Falar com especialista',
   whatsapp: 'Chamar no WhatsApp',
-  /** Link do hero que rola até a seção de linhas. Não é CTA de atendimento. */
-  findLine: 'Encontrar minha torre',
 } as const
 
 /* ------------------------------------------------------------------ header */
@@ -66,52 +61,24 @@ export const hero = {
     src: heroBg,
     alt: 'Quatro torres de iluminação Atlas Copco acesas em área portuária',
     /** Larguras geradas: as mesmas no <Picture> do Hero e no preload do Layout. */
-    widths: [480, 768, 1020],
-    sizes: '(min-width: 1024px) 46vw, 100vw',
+    widths: [640, 1024, 1536, 1981],
+    sizes: '(min-width: 1024px) 1700px, 100vw',
   },
-  help: {
-    title: 'Não sabe qual modelo escolher?',
-    text: 'Descreva a aplicação. Nós indicamos a torre.',
-  },
-  lines: {
-    title: 'Encontre a torre para a sua operação',
-    note: 'Cobertura e autonomia dependem do modelo e da configuração.',
-    items: [
-      {
-        id: 'hilight-ms4',
-        icon: 'sun',
-        title: 'HiLight MS4',
-        spec: ['Solar', '3.846 m²'],
-        description: 'Bateria de lítio, sem consumo de combustível.',
-      },
-      {
-        id: 'hilight-v7-plus',
-        icon: 'engine',
-        title: 'HiLight V7+',
-        spec: ['Diesel', 'Até 7.000 m²'],
-        description: 'Áreas grandes e autonomia de até 105 h.',
-      },
-      {
-        id: 'hilight-mi6-plus',
-        icon: 'refresh',
-        title: 'HiLight MI6+',
-        spec: ['Híbrida', 'Até 6.000 m²'],
-        description: 'Combina bateria e motor a diesel.',
-      },
-    ],
-  },
+  points: [
+    { icon: 'sun', line1: 'HiLight MS4 solar', line2: '3.846 m²' },
+    { icon: 'engine', line1: 'HiLight V7+ diesel', line2: 'até 7.000 m²' },
+    { icon: 'refresh', line1: 'HiLight MI6+ híbrida', line2: 'até 6.000 m²' },
+  ],
+  /** Aviso sob os botões: os dados acima variam por modelo e configuração. */
+  note: 'Cobertura e autonomia dependem do modelo e da configuração.',
 } as const satisfies {
   eyebrow: string
   title: string
   text: string
   highlight: string
   banner: Photo & { widths: readonly number[]; sizes: string }
-  help: { title: string; text: string }
-  lines: {
-    title: string
-    note: string
-    items: readonly [HeroLine, HeroLine, HeroLine]
-  }
+  points: readonly [HeroPoint, HeroPoint, HeroPoint]
+  note: string
 }
 
 /* ----------------------------------------------------------------- cotação */
