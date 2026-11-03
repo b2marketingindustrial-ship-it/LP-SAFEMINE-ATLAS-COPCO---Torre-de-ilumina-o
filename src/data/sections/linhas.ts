@@ -25,6 +25,8 @@ export interface ProductLine {
   description: string
   photo: Photo
   features: readonly [string, string, string]
+  /** Quando escolher esta torre: o critério da fonte de energia, do site da Safe Mine. */
+  idealFor: string
   /** Exatamente um card escuro por grid. Informe sempre (true/false). */
   dark: boolean
 }
@@ -37,12 +39,14 @@ export const productLines = {
   text: 'Torres HiLight para obras e operações industriais. Conheça as opções solar, diesel e híbrida da Atlas Copco e consulte a indicada para a sua aplicação.',
   /** Rótulos das duas primeiras features de cada card. */
   specLabels: ['Cobertura', 'Energia'],
+  /** Rótulo da linha "quando escolher" de cada card. */
+  idealForLabel: 'Indicada para',
   help: {
     title: 'Não sabe qual torre escolher?',
     text: 'Informe a aplicação e a área a iluminar. A Safe Mine indica o modelo.',
     cta: 'Receber orientação',
   },
-  note: 'Cobertura da MS4 a 20 lux de média. Dados dependem do modelo e da configuração.',
+  note: 'Cobertura e autonomia dependem do modelo e da configuração.',
   items: [
     {
       id: 'hilight-ms4',
@@ -50,16 +54,18 @@ export const productLines = {
       title: 'HiLight MS4',
       description: 'Bateria de lítio e 3 painéis de 430 Wp, sem consumo de combustível.',
       photo: { src: linha1, alt: 'Torre de iluminação solar HiLight MS4 Atlas Copco' },
-      features: ['3.846 m²', 'Solar', 'Bateria de lítio LiFePO₄'],
+      features: ['Até 4.000 m²', 'Solar', 'Bateria de lítio LiFePO₄'],
+      idealFor: 'Locais sem combustível ou com restrição de emissões.',
       dark: false,
     },
     {
       id: 'hilight-v7-plus',
       tag: 'Diesel',
       title: 'HiLight V7+',
-      description: 'Para áreas grandes e longa autonomia, com 4 LEDs SMD de 350 W.',
+      description: 'Carenagem HardHat e chassi Spillage Free, que contém vazamentos de óleo e fluidos.',
       photo: { src: linha2, alt: 'Torre de iluminação a diesel HiLight V7+ Atlas Copco' },
       features: ['Até 7.000 m²', 'Diesel', 'Autonomia de até 105 h'],
+      idealFor: 'Ambientes severos e operação contínua.',
       dark: false,
     },
     {
@@ -69,6 +75,7 @@ export const productLines = {
       description: 'Combina bateria e motor a diesel, para maior flexibilidade e eficiência.',
       photo: { src: linha3, alt: 'Torre de iluminação híbrida HiLight MI6+ Atlas Copco' },
       features: ['Até 6.000 m²', 'Híbrida', 'Bateria e motor a diesel'],
+      idealFor: 'Operações que alternam as fontes conforme a demanda.',
       dark: true,
     },
   ],
@@ -78,6 +85,7 @@ export const productLines = {
   titleHighlight: string
   text: string
   specLabels: readonly [string, string]
+  idealForLabel: string
   help: { title: string; text: string; cta: string }
   note: string
   items:

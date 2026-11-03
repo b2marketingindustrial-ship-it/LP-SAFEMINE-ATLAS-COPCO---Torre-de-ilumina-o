@@ -54,11 +54,13 @@ Header, Hero e os layouts de `linhas`, `identificar`, `aplicacoes`, `diferenciai
 
 | Modelo | Cobertura    | Outros dados                                  | Fonte                                      |
 | ------ | ------------ | --------------------------------------------- | ------------------------------------------ |
-| MS4    | 3.846 m²     | 20 lux de média; LiFePO₄; 3 painéis de 430 Wp | catálogo e apresentação MS4, Atlas Copco   |
-| V7+    | até 7.000 m² | até 105 h; 4 LEDs SMD de 350 W                | catálogo Atlas Copco, p. 8                 |
+| MS4    | até 4.000 m² | LiFePO₄; 3 painéis de 430 Wp | cobertura do site da Safe Mine (o catálogo Atlas Copco dá 3.846 m² a 20 lux de média); demais dados do catálogo MS4 |
+| V7+    | até 7.000 m² | até 105 h; 4 LEDs SMD de 350 W; carenagem HardHat; chassi Spillage Free | catálogo Atlas Copco, p. 8; HardHat e Spillage Free do site da Safe Mine |
 | MI6+   | até 6.000 m² | bateria e motor a diesel                      | só a apresentação corporativa da Safe Mine |
 
 A autonomia da MS4 não aparece: 11 h a 100% e até 43 h dimerizada a 25%, e o planejamento pede para não usar 43 h sem a condição. O catálogo Atlas Copco de jul/2025 não traz a MI6+.
+
+O "Indicada para" de cada card segue a seção "Uma torre para cada necessidade" da página de torres do site da Safe Mine (decisão do usuário em 03/11/2026).
 
 ## Assets
 

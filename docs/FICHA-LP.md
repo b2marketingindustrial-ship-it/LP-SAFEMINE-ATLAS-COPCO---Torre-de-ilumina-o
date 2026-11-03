@@ -149,14 +149,16 @@ blocos:
         tag: Solar
         title: HiLight MS4
         description: Bateria de lítio e 3 painéis de 430 Wp, sem consumo de combustível.
-        features: ['3.846 m²', Solar, Bateria de lítio LiFePO₄]
+        features: ['Até 4.000 m²', Solar, Bateria de lítio LiFePO₄]
+        idealFor: Locais sem combustível ou com restrição de emissões.
         photo: Torre de iluminação solar HiLight MS4 Atlas Copco
         dark: false
       - id: hilight-v7-plus
         tag: Diesel
         title: HiLight V7+
-        description: Para áreas grandes e longa autonomia, com 4 LEDs SMD de 350 W.
+        description: Carenagem HardHat e chassi Spillage Free, que contém vazamentos de óleo e fluidos.
         features: ['Até 7.000 m²', Diesel, Autonomia de até 105 h]
+        idealFor: Ambientes severos e operação contínua.
         photo: Torre de iluminação a diesel HiLight V7+ Atlas Copco
         dark: false
       - id: hilight-mi6-plus
@@ -164,6 +166,7 @@ blocos:
         title: HiLight MI6+
         description: Combina bateria e motor a diesel, para maior flexibilidade e eficiência.
         features: ['Até 6.000 m²', Híbrida, Bateria e motor a diesel]
+        idealFor: Operações que alternam as fontes conforme a demanda.
         photo: Torre de iluminação híbrida HiLight MI6+ Atlas Copco
         dark: true
 
@@ -250,25 +253,26 @@ blocos:
     responde: [marca, cotacao]
     papeis: [Suprimentos, Operações]
     eyebrow: Diferenciais Safe Mine
-    titleLines: [Operação noturna, exige visibilidade.]
-    text: A Safe Mine entende a aplicação antes de indicar a torre, avaliando cobertura, autonomia, fonte de energia e condições do terreno.
+    fonte: página "Quem somos" de safeminesolucoes.com.br (fundação em 2017, mais de duas décadas de experiência da equipe), por pedido do usuário em 03/11/2026
+    titleLines: ['Operações em movimento,', com segurança.]
+    text: Fundada em 2017 em Belo Horizonte, a Safe Mine aproxima mineração e indústria das tecnologias que mantêm a operação segura, produtiva e sem paradas. Entendemos a aplicação antes de indicar a torre.
     scene: Vista aérea noturna de uma mineração iluminada por torres Atlas Copco
     reasons:
       - icon: badge-check
         title: Distribuidor autorizado
         description: Conectamos sua operação à linha HiLight Atlas Copco.
+      - icon: layers
+        title: Mais de 20 anos de experiência
+        description: Profissionais com mais de duas décadas em mineração e indústria.
       - icon: user
         title: Atendimento consultivo
-        description: Entendimento da necessidade antes da indicação.
-      - icon: clock
-        title: Resposta rápida
-        description: Resposta rápida aos desafios e demandas da operação.
-      - icon: layers
-        title: Experiência de mercado
-        description: Conhecimento técnico e relacionamentos sólidos no setor.
-      - icon: sun
-        title: Solar, diesel ou híbrida
-        description: Escolha conforme a necessidade da aplicação.
+        description: Avaliamos cobertura, autonomia, energia e terreno antes de indicar.
+      - icon: shield
+        title: Segurança e continuidade
+        description: Visibilidade para operar à noite com segurança e menos paradas.
+      - icon: leaf
+        title: Menos emissões
+        description: Opções solar e híbrida para reduzir consumo, emissões e custo.
 
   escopo:
     veredicto: nao-se-aplica
@@ -300,7 +304,7 @@ naoAplicado:
   - TCO da MS4 e comparativo de baterias, que dependem de premissas não validadas
   - comparativo com concorrente citado pelo nome
   - autonomia da MS4 (43 h só vale dimerizada a 25%)
-  - fundação em 2017 — só entra com o bloco de clientes e números
+  - '"nível nacional e internacional" da página Quem somos: conflita com os claims proibidos de abrangência'
 ```
 
 # Ficha de execução — Safe Mine Soluções / Torres de iluminação HiLight Atlas Copco
@@ -319,7 +323,8 @@ As seções são as da LP de compressores: `linhas`, `identificar`, `aplicacoes`
 | --------------------------------------------------- | -------------- | ---------------------------------------------- |
 | Ficha técnica Atlas Copco da MI6+                   | Safe Mine      | confirma 6.000 m² e a disponibilidade          |
 | Foto da MI6+ em alta                                | Safe Mine      | substitui a miniatura de 301×258 ampliada      |
-| MS4: 3.846 m² (Atlas Copco) ou 4.000 m² (Safe Mine) | Safe Mine      | define o número publicado; usado 3.846 m²      |
+| MS4: 3.846 m² (Atlas Copco) ou 4.000 m² (Safe Mine) | Safe Mine      | usado 4.000 m², do site da Safe Mine, por decisão do usuário em 03/11/2026 |
+| "Distribuidor autorizado Atlas Copco"               | Safe Mine      | o site da Safe Mine não usa o termo; confirmar a autorização |
 | V7+: 7.000 m² ou 7.360 m² (tabela do catálogo)      | Safe Mine      | define o número publicado; usado 7.000 m²      |
 | Frase "Operação noturna exige visibilidade"         | Safe Mine      | frase inferida; falta aprovar                  |
 | Foto real em canteiro de obra e em evento           | Safe Mine      | substitui as fotos do 1º e do 4º card          |

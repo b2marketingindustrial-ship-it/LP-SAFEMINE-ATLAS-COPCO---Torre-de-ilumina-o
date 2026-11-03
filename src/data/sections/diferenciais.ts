@@ -19,8 +19,9 @@ export interface Reason {
 export const why = {
   eyebrow: `Diferenciais ${site.brandShort}`,
   /** Cada item é uma linha do H2 (quebra forçada); a segunda sai em verde. 3–6 palavras no total. */
-  titleLines: ['Operação noturna', 'exige visibilidade.'],
-  text: `A ${site.brandShort} entende a aplicação antes de indicar a torre, avaliando cobertura, autonomia, fonte de energia e condições do terreno.`,
+  titleLines: ['Operações em movimento,', 'com segurança.'],
+  /** Trajetória e posicionamento da página "Quem somos" de safeminesolucoes.com.br. */
+  text: `Fundada em 2017 em Belo Horizonte, a ${site.brandShort} aproxima mineração e indústria das tecnologias que mantêm a operação segura, produtiva e sem paradas. Entendemos a aplicação antes de indicar a torre.`,
   /** Linha de apoio sob o botão. */
   help: 'Informe o que souber. Nós ajudamos na escolha da torre.',
   scene: {
@@ -34,24 +35,24 @@ export const why = {
       description: 'Conectamos sua operação à linha HiLight Atlas Copco.',
     },
     {
+      icon: 'layers',
+      title: 'Mais de 20 anos de experiência',
+      description: 'Profissionais com mais de duas décadas em mineração e indústria.',
+    },
+    {
       icon: 'user',
       title: 'Atendimento consultivo',
-      description: 'Entendimento da necessidade antes da indicação.',
+      description: 'Avaliamos cobertura, autonomia, energia e terreno antes de indicar.',
     },
     {
-      icon: 'clock',
-      title: 'Resposta rápida',
-      description: 'Resposta rápida aos desafios e demandas da operação.',
+      icon: 'shield',
+      title: 'Segurança e continuidade',
+      description: 'Visibilidade para operar à noite com segurança e menos paradas.',
     },
     {
-      icon: 'layers',
-      title: 'Experiência de mercado',
-      description: 'Conhecimento técnico e relacionamentos sólidos no setor.',
-    },
-    {
-      icon: 'sun',
-      title: 'Solar, diesel ou híbrida',
-      description: 'Escolha conforme a necessidade da aplicação.',
+      icon: 'leaf',
+      title: 'Menos emissões',
+      description: 'Opções solar e híbrida para reduzir consumo, emissões e custo.',
     },
   ],
 } as const satisfies {

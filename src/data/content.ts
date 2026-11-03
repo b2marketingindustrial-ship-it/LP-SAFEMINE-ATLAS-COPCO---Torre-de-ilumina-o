@@ -62,7 +62,7 @@ export const hero = {
     sizes: '(min-width: 1024px) 1700px, 100vw',
   },
   points: [
-    { icon: 'sun', line1: 'HiLight MS4 solar', line2: '3.846 m²' },
+    { icon: 'sun', line1: 'HiLight MS4 solar', line2: 'até 4.000 m²' },
     { icon: 'engine', line1: 'HiLight V7+ diesel', line2: 'até 7.000 m²' },
     { icon: 'refresh', line1: 'HiLight MI6+ híbrida', line2: 'até 6.000 m²' },
   ],
