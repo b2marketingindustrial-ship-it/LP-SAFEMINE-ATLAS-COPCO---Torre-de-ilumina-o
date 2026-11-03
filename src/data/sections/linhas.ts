@@ -36,16 +36,11 @@ export const productLines = {
   title: 'Torres HiLight para cada fonte de energia',
   /** Trecho do título em verde, na segunda linha. */
   titleHighlight: 'cada fonte de energia',
-  text: 'Torres HiLight para obras e operações industriais. Conheça as opções solar, diesel e híbrida da Atlas Copco e consulte a indicada para a sua aplicação.',
+  text: 'Opções solar, diesel e híbrida da Atlas Copco para obras e operações industriais.',
   /** Rótulos das duas primeiras features de cada card. */
   specLabels: ['Cobertura', 'Energia'],
   /** Rótulo da linha "quando escolher" de cada card. */
   idealForLabel: 'Indicada para',
-  help: {
-    title: 'Não sabe qual torre escolher?',
-    text: 'Informe a aplicação e a área a iluminar. A Safe Mine indica o modelo.',
-    cta: 'Receber orientação',
-  },
   note: 'Cobertura e autonomia dependem do modelo e da configuração.',
   items: [
     {
@@ -62,7 +57,8 @@ export const productLines = {
       id: 'hilight-v7-plus',
       tag: 'Diesel',
       title: 'HiLight V7+',
-      description: 'Carenagem HardHat e chassi Spillage Free, que contém vazamentos de óleo e fluidos.',
+      description:
+        'Carenagem HardHat e chassi Spillage Free, que contém vazamentos de óleo e fluidos.',
       photo: { src: linha2, alt: 'Torre de iluminação a diesel HiLight V7+ Atlas Copco' },
       features: ['Até 7.000 m²', 'Diesel', 'Autonomia de até 105 h'],
       idealFor: 'Ambientes severos e operação contínua.',
@@ -86,7 +82,6 @@ export const productLines = {
   text: string
   specLabels: readonly [string, string]
   idealForLabel: string
-  help: { title: string; text: string; cta: string }
   note: string
   items:
     | readonly [ProductLine, ProductLine, ProductLine]

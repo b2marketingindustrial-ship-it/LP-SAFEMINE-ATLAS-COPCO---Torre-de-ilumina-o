@@ -1,13 +1,15 @@
 /**
  * Dados da seção "Aplicações" (biblioteca B2, fase: prova).
  *
- * 4 cards-botão com foto 4:3. O card inteiro é o CTA.
+ * 4 cards-botão com foto 4:3, ícone e título. O card inteiro é o CTA. Estrutura da seção
+ * "Segmentos atendidos" das LPs SEIVE, nas cores da Safe Mine (03/11/2026, pedido do usuário).
  *
  * As quatro aplicações são as do planejamento da campanha: obra e mineração têm palavra-chave
  * própria; operações remotas e eventos vêm depois. Locadoras são público comprador, não
  * aplicação, e por isso entram na faixa abaixo dos cards. Fotos do site da Safe Mine e da
  * apresentação da MS4 (Atlas Copco): ainda não há foto da torre em canteiro real.
  */
+import type { IconName } from '@data/icons'
 import type { Photo } from '@data/types'
 
 import app1 from '@assets/aplicacoes/aplicacao-1.png'
@@ -17,6 +19,7 @@ import app4 from '@assets/aplicacoes/aplicacao-4.png'
 
 export interface Application {
   id: string
+  icon: IconName
   label: string
   description: string
   photo: Photo
@@ -25,9 +28,9 @@ export interface Application {
 export const applications = {
   eyebrow: 'Aplicações',
   title: 'Iluminação temporária para cada operação',
-  /** Trecho do título em verde, na segunda linha. */
+  /** Trecho do título em verde. */
   titleHighlight: 'cada operação',
-  text: 'Iluminação temporária para mineração, construção e operações remotas, com a fonte de energia adequada a cada aplicação.',
+  text: 'Para mineração, construção e operações remotas, com a fonte de energia certa para cada uma.',
   /** Chamada no pé de cada card (o card inteiro é o botão). */
   cardCta: 'Cotar para esta aplicação',
   /** Faixa abaixo dos cards, para quem não se vê nas 4 aplicações. */
@@ -38,6 +41,7 @@ export const applications = {
   items: [
     {
       id: 'canteiros-de-obra',
+      icon: 'building',
       label: 'Canteiros de obra',
       description: 'Iluminação de canteiros, frentes de obra e áreas operacionais.',
       photo: {
@@ -47,14 +51,16 @@ export const applications = {
     },
     {
       id: 'mineracao-pedreiras',
+      icon: 'mountain',
       label: 'Mineração e pedreiras',
       description: 'Iluminação das áreas de trabalho em mineração e pedreiras.',
       photo: { src: app2, alt: 'Torre de iluminação HiLight a diesel em área de mineração' },
     },
     {
       id: 'operacoes-remotas',
+      icon: 'road',
       label: 'Operações remotas',
-      description: 'Iluminação temporária para operações remotas e de alta exigência.',
+      description: 'Túneis, frentes isoladas e locais sem rede elétrica.',
       photo: {
         src: app3,
         alt: 'Equipe com colete refletivo junto a torres de iluminação na entrada de um túnel',
@@ -62,7 +68,8 @@ export const applications = {
     },
     {
       id: 'eventos-temporarias',
-      label: 'Eventos e operações temporárias',
+      icon: 'users',
+      label: 'Eventos temporários',
       description: 'Iluminação móvel para eventos, conforme o local e o projeto.',
       photo: {
         src: app4,

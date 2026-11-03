@@ -52,11 +52,11 @@ Header, Hero e os layouts de `linhas`, `identificar`, `aplicacoes`, `diferenciai
 
 ## Dados usados
 
-| Modelo | Cobertura    | Outros dados                                  | Fonte                                      |
-| ------ | ------------ | --------------------------------------------- | ------------------------------------------ |
-| MS4    | até 4.000 m² | LiFePO₄; 3 painéis de 430 Wp | cobertura do site da Safe Mine (o catálogo Atlas Copco dá 3.846 m² a 20 lux de média); demais dados do catálogo MS4 |
-| V7+    | até 7.000 m² | até 105 h; 4 LEDs SMD de 350 W; carenagem HardHat; chassi Spillage Free | catálogo Atlas Copco, p. 8; HardHat e Spillage Free do site da Safe Mine |
-| MI6+   | até 6.000 m² | bateria e motor a diesel                      | só a apresentação corporativa da Safe Mine |
+| Modelo | Cobertura    | Outros dados                                                            | Fonte                                                                                                               |
+| ------ | ------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| MS4    | até 4.000 m² | LiFePO₄; 3 painéis de 430 Wp                                            | cobertura do site da Safe Mine (o catálogo Atlas Copco dá 3.846 m² a 20 lux de média); demais dados do catálogo MS4 |
+| V7+    | até 7.000 m² | até 105 h; 4 LEDs SMD de 350 W; carenagem HardHat; chassi Spillage Free | catálogo Atlas Copco, p. 8; HardHat e Spillage Free do site da Safe Mine                                            |
+| MI6+   | até 6.000 m² | bateria e motor a diesel                                                | só a apresentação corporativa da Safe Mine                                                                          |
 
 A autonomia da MS4 não aparece: 11 h a 100% e até 43 h dimerizada a 25%, e o planejamento pede para não usar 43 h sem a condição. O catálogo Atlas Copco de jul/2025 não traz a MI6+.
 
@@ -84,8 +84,17 @@ Pendências em `docs/FICHA-LP.md`. Na Vercel não há o plugin de atendimento: o
 
 ## Desvios do padrão
 
-- **Header:** sem desvio. Restaurado em 01/11/2026 à estrutura fixa 4.1.1 (barra navy sticky, logo em placa pendurada, tagline central, CTA laranja, sem âncoras).
+- **Header:** desvio pedido pelo usuário em 03/11/2026: mesma estrutura do header da LP SEIVE Lubrificação centralizada. Barra branca sticky com a logo da Safe Mine dentro dela (sem a placa pendurada), filete da marca no topo, tagline central com selo, CTA e sombra só ao rolar. Sem menu (regra 1). Logos Safe Mine e Atlas Copco lado a lado, nessa ordem, separadas por um filete (pedido do usuário, 03/11/2026); a da Atlas Copco é a do Wikimedia Commons (`Atlas-Copco-Logo.svg`, PNG de 960 px, em `src/assets/atlas-copco-logo.png`), a trocar pela oficial se chegar. Assinatura A8 do `check-lp.mjs` repinada.
 - **Hero:** sem desvio. O Hero da primeira versão (fundo claro, sem a coluna do chat) foi substituído em 01/11/2026 pelo da estrutura fixa 4.1.2: grid `1fr · 270px · 300px`, coluna 2 vazia, slot `shortcode` de 300px, foto de 1700px ancorada na borda do container. A faixa de prioridades e o cartão de ajuda do hero saíram; a nota ficou sob os botões. A foto foi reenquadrada em 1981×900, com o grupo em ~70% da largura.
+- **Aplicações:** desvio pedido pelo usuário em 03/11/2026: estrutura da seção "Segmentos atendidos" das LPs SEIVE, nas cores da Safe Mine. Faixa navy (`navy-premium`) de largura total com cantos arredondados, cabeçalho centrado, carrossel de cards brancos com ícone, chamada e seta, e a faixa branca "Sua aplicação não está aqui?". O manifesto segue com `carriesNavy: false`, como na LP SEIVE.
+- **Perguntas:** seção `perguntas` (componente `Faq.astro` da LP SEIVE Supressão de incêndio) entre aplicações e diferenciais, pedido do usuário em 03/11/2026. Fundo cinza, ritmo `flow`; `index.astro` e `lp.manifest.json` estendidos à mão. As 6 perguntas usam só dados já publicados na LP; falta a lista real do comercial (prazo, garantia).
+- **Diferenciais:** desvio pedido pelo usuário em 03/11/2026: layout "Por que a Safe Mine" das LPs SEIVE, nas cores da Safe Mine. Bloco navy em largura total que sobe por baixo da base arredondada do FAQ (`--lp-round`, global.css), título com a última linha em verde, texto, 3 números (2017, +20 anos da equipe, 3 fontes) e CTA; foto à direita; 5 cards brancos sobrepostos à base. Sem selos de certificação.
+- **Cotação:** como na LP SEIVE Lubrificação: só o espaço do shortcode, sem card nem nota de LGPD. Ritmo `pt-8 pb-20` mantido.
+- **Linhas:** a faixa "Não sabe qual torre escolher?" saiu em 03/11/2026 por repetir o painel `identificar` logo abaixo, como na LP SEIVE.
+- **Recursos HiLight:** seção própria (`FieldFeatures.astro`, `recursos.ts`, fase prova) acima do FAQ, pedido do usuário em 03/11/2026. 6 recursos do site oficial da Atlas Copco que a página não citava, cada um com o modelo ou a linha a que se aplica. Fora da biblioteca: `npm run compose` a removeria.
+- **Números divergentes:** o site da Atlas Copco (03/11/2026) traz V7+ com 7.360 m² e até 142 h, MS4 com 4.340 m² e de 11 a 85 h, e o nome "HiLight MI+ 6". A LP mantém 7.000 m², 105 h, 4.000 m² e MI6+ por decisão do usuário; pendência na ficha.
+- **Rótulos:** `Eyebrow.astro` da LP SEIVE (traço verde de 36px) em toda a página, no lugar do quadrado.
+- **Clientes:** os logos de clientes SEIVE da LP de lubrificação não entram: são clientes da fabricante SEIVE, não de torres nem comprovadamente da Safe Mine (decisão do usuário, 03/11/2026).
 - **Paleta:** os véus do hero usam o azul `#0a1d4d` da marca no lugar do navy `#001830` do template. O token `accent-orange-light` (`#7ba249`) existe só para o destaque do H1 sobre o fundo escuro.
 
 ## Header restaurado ao padrão (01/11/2026)

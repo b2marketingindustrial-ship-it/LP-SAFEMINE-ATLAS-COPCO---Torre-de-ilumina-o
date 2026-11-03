@@ -143,7 +143,7 @@ blocos:
     papeis: [Engenharia, Manutenção]
     eyebrow: Linha HiLight
     title: Torres HiLight para cada fonte de energia
-    text: Torres HiLight para obras e operações industriais. Conheça as opções solar, diesel e híbrida da Atlas Copco e consulte a indicada para a sua aplicação.
+    text: Opções solar, diesel e híbrida da Atlas Copco para obras e operações industriais.
     items:
       - id: hilight-ms4
         tag: Solar
@@ -246,7 +246,8 @@ blocos:
 
   perguntas:
     veredicto: quase
-    falta: perguntas do comercial sobre prazo, garantia e autonomia; a estrutura desta LP não inclui a seção
+    entrou: 03/11/2026, a pedido do usuário, com 6 perguntas sobre dados já publicados (src/data/sections/perguntas.ts)
+    falta: perguntas do comercial sobre prazo e garantia
 
   diferenciais:
     veredicto: completo
@@ -296,7 +297,7 @@ conflitos:
     entrou: Solicitar cotação, Falar com especialista e Chamar no WhatsApp, com data-cta por modelo
   - pede: logo Atlas Copco
     regra: logo de terceiro só com arquivo e autorização registrados
-    entrou: marca citada por extenso
+    entrou: logo no header ao lado da Safe Mine, por decisão do usuário em 03/11/2026 (arquivo do Wikimedia Commons)
 
 naoAplicado:
   - WhatsApp secundário (31) 99710-0350, e-mail, site institucional e redes
@@ -319,16 +320,17 @@ As seções são as da LP de compressores: `linhas`, `identificar`, `aplicacoes`
 
 ## Pendências
 
-| O que falta                                         | Quem resolve   | Efeito                                         |
-| --------------------------------------------------- | -------------- | ---------------------------------------------- |
-| Ficha técnica Atlas Copco da MI6+                   | Safe Mine      | confirma 6.000 m² e a disponibilidade          |
-| Foto da MI6+ em alta                                | Safe Mine      | substitui a miniatura de 301×258 ampliada      |
-| MS4: 3.846 m² (Atlas Copco) ou 4.000 m² (Safe Mine) | Safe Mine      | usado 4.000 m², do site da Safe Mine, por decisão do usuário em 03/11/2026 |
-| "Distribuidor autorizado Atlas Copco"               | Safe Mine      | o site da Safe Mine não usa o termo; confirmar a autorização |
-| V7+: 7.000 m² ou 7.360 m² (tabela do catálogo)      | Safe Mine      | define o número publicado; usado 7.000 m²      |
-| Frase "Operação noturna exige visibilidade"         | Safe Mine      | frase inferida; falta aprovar                  |
-| Foto real em canteiro de obra e em evento           | Safe Mine      | substitui as fotos do 1º e do 4º card          |
-| Uso das imagens do fabricante                       | Safe Mine      | confirma a autorização do catálogo Atlas Copco |
-| Formulário e chat do plugin no WordPress            | B2             | ativa o formulário e os botões de atendimento  |
-| URL final e política de privacidade                 | B2 + Safe Mine | `site.url` e `privacyUrl`                      |
-| Geografia da campanha limitada a MG                 | B2             | confirma a área declarada na página            |
+| O que falta                                                         | Quem resolve   | Efeito                                                                     |
+| ------------------------------------------------------------------- | -------------- | -------------------------------------------------------------------------- |
+| Ficha técnica Atlas Copco da MI6+                                   | Safe Mine      | confirma 6.000 m² e a disponibilidade                                      |
+| Foto da MI6+ em alta                                                | Safe Mine      | substitui a miniatura de 301×258 ampliada                                  |
+| MS4: 3.846 m² (Atlas Copco) ou 4.000 m² (Safe Mine)                 | Safe Mine      | usado 4.000 m², do site da Safe Mine, por decisão do usuário em 03/11/2026 |
+| V7+ 7.360 m² e 142 h, MS4 4.340 m², nome "MI+ 6" (site Atlas Copco) | Safe Mine      | a LP usa 7.000 m², 105 h, 4.000 m² e MI6+; confirmar quais publicar        |
+| "Distribuidor autorizado Atlas Copco"                               | Safe Mine      | o site da Safe Mine não usa o termo; confirmar a autorização               |
+| V7+: 7.000 m² ou 7.360 m² (tabela do catálogo)                      | Safe Mine      | define o número publicado; usado 7.000 m²                                  |
+| Frase "Operação noturna exige visibilidade"                         | Safe Mine      | frase inferida; falta aprovar                                              |
+| Foto real em canteiro de obra e em evento                           | Safe Mine      | substitui as fotos do 1º e do 4º card                                      |
+| Uso das imagens do fabricante                                       | Safe Mine      | confirma a autorização do catálogo Atlas Copco                             |
+| Formulário e chat do plugin no WordPress                            | B2             | ativa o formulário e os botões de atendimento                              |
+| URL final e política de privacidade                                 | B2 + Safe Mine | `site.url` e `privacyUrl`                                                  |
+| Geografia da campanha limitada a MG                                 | B2             | confirma a área declarada na página                                        |
